@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bảng điều khiển quản trị portfolio - giao diện minh họa tĩnh."
+    />
+    <title>Dashboard | Lê Hà Vỹ</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="admin-page">
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <a class="brand sidebar-brand" href="index.html"
+          ><span class="brand-mark">LV</span
+          ><span>lehavy<span class="brand-dot">.</span></span></a
+        >
+        <p class="sidebar-label">MENU</p>
+        <nav class="sidebar-nav" aria-label="Điều hướng quản trị">
+          <a class="sidebar-link active" href="#dashboard"
+            ><span>▦</span> Dashboard</a
+          >
+          <a class="sidebar-link" href="#profile"
+            ><span>◉</span> Thông tin cá nhân</a
+          >
+          <a class="sidebar-link" href="#project-management"
+            ><span>▤</span> Dự án</a
+          >
+          <a class="sidebar-link" href="index.html#contact"
+            ><span>✉</span> Liên hệ</a
+          >
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="sidebar-user">
+            <span class="user-avatar">LV</span
+            ><span><strong>Lê Hà Vỹ</strong><small>Quản trị viên</small></span>
+          </div>
+          <a class="sidebar-home" href="index.html">← Quay về Homepage</a>
+        </div>
+      </aside>
+
+      <main class="dashboard-main" id="dashboard">
+        <header class="dashboard-header">
+          <div>
+            <p class="eyebrow">THỨ TƯ, 21 THÁNG 10, 2026</p>
+            <h1>Dashboard</h1>
+          </div>
+          <div class="dashboard-user">
+            <span class="user-avatar">LV</span
+            ><span><strong>Lê Hà Vỹ</strong><small>Quản trị viên</small></span>
+          </div>
+        </header>
+
+        <section class="stats-grid" aria-label="Thống kê tổng quan">
+          <article class="stat-card">
+            <div class="stat-heading">
+              <span>Tổng dự án</span
+              ><span class="stat-icon stat-purple">▤</span>
+            </div>
+            <strong>08</strong
+            ><small
+              ><span class="stat-positive">↑ 2</span> so với tháng trước</small
+            >
+          </article>
+          <article class="stat-card">
+            <div class="stat-heading">
+              <span>Lượt xem</span><span class="stat-icon stat-blue">◉</span>
+            </div>
+            <strong>1,284</strong
+            ><small
+              ><span class="stat-positive">↑ 12%</span> so với tháng
+              trước</small
+            >
+          </article>
+          <article class="stat-card">
+            <div class="stat-heading">
+              <span>Tin nhắn mới</span
+              ><span class="stat-icon stat-orange">✉</span>
+            </div>
+            <strong>06</strong><small>Trong 30 ngày gần nhất</small>
+          </article>
+          <article class="stat-card">
+            <div class="stat-heading">
+              <span>Hoàn thành</span><span class="stat-icon stat-green">✓</span>
+            </div>
+            <strong>92%</strong><small>Tiến độ portfolio</small>
+          </article>
+        </section>
+
+        <section class="dashboard-panel profile-panel" id="profile">
+          <div class="panel-heading">
+            <div>
+              <h2>Thông tin cá nhân</h2>
+              <p>Thông tin hiển thị trên portfolio của bạn.</p>
+            </div>
+            <button class="button button-outline button-small" type="button">
+              Edit profile
+            </button>
+          </div>
+          <div class="profile-details">
+            <div class="profile-avatar">HV</div>
+            <div class="profile-data">
+              <h3></h3>Lê Hà Vỹ</h3>
+              <p class="text-primary">Frontend Developer · Sinh viên</p>
+              <p>
+                Mình yêu thích thiết kế và xây dựng các trải nghiệm web đơn
+                giản, hữu ích.
+              </p>
+            </div>
+            <div class="profile-contact">
+              <span><small>Email</small>minh.anh@example.com</span
+              ><span><small>Địa điểm</small>Thành phố Hồ Chí Minh</span>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="dashboard-panel project-management"
+          id="project-management"
+        >
+          <div class="panel-heading project-toolbar">
+            <div>
+              <h2>Danh sách dự án</h2>
+              <p>Quản lý các dự án đang hiển thị trong portfolio.</p>
+            </div>
+            <button class="button button-primary button-small" type="button">
+              <span aria-hidden="true">＋</span> Add Project
+            </button>
+          </div>
+          <div class="table-scroll">
+            <table class="project-table">
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th>Tên dự án</th>
+                  <th>Công nghệ</th>
+                  <th>Trạng thái</th>
+                  <th>Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td><strong>Studio Sáng Tạo</strong></td>
+                  <td>
+                    <div class="tag-list">
+                      <span>HTML</span><span>CSS</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="status-badge status-published">Đã đăng</span>
+                  </td>
+                  <td>
+                    <div class="table-actions">
+                      <button class="text-action" type="button">Edit</button
+                      ><button class="text-action text-danger" type="button">
+                        Delete
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td><strong>Tiệm Nhà Mây</strong></td>
+                  <td>
+                    <div class="tag-list">
+                      <span>HTML</span><span>CSS Grid</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="status-badge status-published">Đã đăng</span>
+                  </td>
+                  <td>
+                    <div class="table-actions">
+                      <button class="text-action" type="button">Edit</button
+                      ><button class="text-action text-danger" type="button">
+                        Delete
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td><strong>Ngày Mới</strong></td>
+                  <td>
+                    <div class="tag-list">
+                      <span>HTML5</span><span>CSS3</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="status-badge status-draft">Bản nháp</span>
+                  </td>
+                  <td>
+                    <div class="table-actions">
+                      <button class="text-action" type="button">Edit</button
+                      ><button class="text-action text-danger" type="button">
+                        Delete
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">
+            Bảng có thể cuộn ngang trên màn hình nhỏ. Các thao tác chỉ là giao
+            diện minh họa.
+          </p>
+        </section>
+
+        <section class="dashboard-panel add-project-panel">
+          <div class="panel-heading">
+            <div>
+              <h2>Thêm dự án mới</h2>
+              <p>Điền thông tin bên dưới để tạo một dự án mẫu.</p>
+            </div>
+          </div>
+          <form class="admin-form" action="#" method="get">
+            <div class="form-field">
+              <label for="project-name">Tên dự án</label
+              ><input
+                id="project-name"
+                name="project-name"
+                type="text"
+                placeholder="Ví dụ: Website Portfolio"
+              />
+            </div>
+            <div class="form-field">
+              <label for="project-tech">Công nghệ</label
+              ><input
+                id="project-tech"
+                name="project-tech"
+                type="text"
+                placeholder="Ví dụ: HTML, CSS"
+              />
+            </div>
+            <div class="form-field form-field-wide">
+              <label for="project-description">Mô tả ngắn</label
+              ><textarea
+                id="project-description"
+                name="project-description"
+                rows="3"
+                placeholder="Mô tả nội dung dự án..."
+              ></textarea>
+            </div>
+            <div class="form-field">
+              <label for="project-status">Trạng thái</label
+              ><select id="project-status" name="project-status">
+                <option>Đã đăng</option>
+                <option>Bản nháp</option>
+              </select>
+            </div>
+            <div class="admin-form-actions">
+              <button class="button button-outline button-small" type="reset">
+                Hủy</button
+              ><button class="button button-primary button-small" type="button">
+                Add Project
+              </button>
+            </div>
+          </form>
+          <p class="form-note">
+            Giao diện tĩnh, chưa hỗ trợ thêm, sửa hoặc xóa dữ liệu thực tế.
+          </p>
+        </section>
+        <footer class="dashboard-footer">
+          © 2026 Lê Hà Vỹ · Portfolio Dashboard
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
